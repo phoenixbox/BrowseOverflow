@@ -10,8 +10,6 @@
 
 @implementation SDRQuestion
 
--(NSDate *)date {
-    return [NSDate date];
-}
+@synthesize date;
 
 @end

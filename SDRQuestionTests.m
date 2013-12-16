@@ -30,7 +30,9 @@
 - (void)testQuestionHasDate
 {
     SDRQuestion *question = [[SDRQuestion alloc]init];
-    XCTAssertTrue([question.date isKindOfClass: [NSDate class]],@"Questions should have a date property");
+    NSDate *testDate = [NSDate distantPast];
+    question.date = testDate;
+    XCTAssertEqualObjects(question.date, testDate, @"Questions should have a date property");
 }
 
 @end

@@ -22,6 +22,9 @@
 		CB9DCF7F185E848C002B2A89 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB9DCF5E185E848C002B2A89 /* UIKit.framework */; };
 		CB9DCF87185E848C002B2A89 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB9DCF85185E848C002B2A89 /* InfoPlist.strings */; };
 		CB9DCF89185E848C002B2A89 /* BrowseOverflowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9DCF88185E848C002B2A89 /* BrowseOverflowTests.m */; };
+		CB9DCF9A185E895C002B2A89 /* SDRTopicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9DCF99185E895C002B2A89 /* SDRTopicTests.m */; };
+		CB9DCF9D185E8995002B2A89 /* SDRTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9DCF9C185E8995002B2A89 /* SDRTopic.m */; };
+		CB9DCF9E185E8995002B2A89 /* SDRTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9DCF9C185E8995002B2A89 /* SDRTopic.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,9 @@
 		CB9DCF84185E848C002B2A89 /* BrowseOverflowTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BrowseOverflowTests-Info.plist"; sourceTree = "<group>"; };
 		CB9DCF86185E848C002B2A89 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CB9DCF88185E848C002B2A89 /* BrowseOverflowTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BrowseOverflowTests.m; sourceTree = "<group>"; };
+		CB9DCF99185E895C002B2A89 /* SDRTopicTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SDRTopicTests.m; path = ../SDRTopicTests.m; sourceTree = "<group>"; };
+		CB9DCF9B185E8995002B2A89 /* SDRTopic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDRTopic.h; sourceTree = "<group>"; };
+		CB9DCF9C185E8995002B2A89 /* SDRTopic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDRTopic.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +121,8 @@
 		CB9DCF60185E848C002B2A89 /* BrowseOverflow */ = {
 			isa = PBXGroup;
 			children = (
+				CB9DCF9B185E8995002B2A89 /* SDRTopic.h */,
+				CB9DCF9C185E8995002B2A89 /* SDRTopic.m */,
 				CB9DCF69185E848C002B2A89 /* SDRAppDelegate.h */,
 				CB9DCF6A185E848C002B2A89 /* SDRAppDelegate.m */,
 				CB9DCF6C185E848C002B2A89 /* Main.storyboard */,
@@ -142,6 +150,7 @@
 		CB9DCF82185E848C002B2A89 /* BrowseOverflowTests */ = {
 			isa = PBXGroup;
 			children = (
+				CB9DCF99185E895C002B2A89 /* SDRTopicTests.m */,
 				CB9DCF88185E848C002B2A89 /* BrowseOverflowTests.m */,
 				CB9DCF83185E848C002B2A89 /* Supporting Files */,
 			);
@@ -259,6 +268,7 @@
 				CB9DCF71185E848C002B2A89 /* SDRMasterViewController.m in Sources */,
 				CB9DCF67185E848C002B2A89 /* main.m in Sources */,
 				CB9DCF74185E848C002B2A89 /* SDRDetailViewController.m in Sources */,
+				CB9DCF9D185E8995002B2A89 /* SDRTopic.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +277,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB9DCF89185E848C002B2A89 /* BrowseOverflowTests.m in Sources */,
+				CB9DCF9A185E895C002B2A89 /* SDRTopicTests.m in Sources */,
+				CB9DCF9E185E8995002B2A89 /* SDRTopic.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

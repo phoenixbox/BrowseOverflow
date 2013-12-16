@@ -11,5 +11,6 @@
 @interface SDRQuestion : NSObject
 
 @property (nonatomic, strong) NSDate *date;
-
+@property (nonatomic, strong) NSString *title;
+@property (nonatomic, assign) int score;
 @end

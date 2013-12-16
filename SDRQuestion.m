@@ -10,6 +10,6 @@
 
 @implementation SDRQuestion
 
-@synthesize date;
+@synthesize date, title, score;
 
 @end

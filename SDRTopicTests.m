@@ -35,10 +35,10 @@
     XCTAssertNotNil(newTopic, @"should be able to create a topic instance");
 }
 
--(void)testThatATopicCanBeNamed
+-(void)testThatATopicCanBeTagged
 {
-    SDRTopic *namedTopic = [[SDRTopic alloc]initWithString:@"iPhone"];
-    XCTAssertEqualObjects(namedTopic.name, @"iPhone",@"Topic is correctly named");
+    SDRTopic *taggedTopic = [[SDRTopic alloc] initWithString:@"iPhone" tag: @"iPhone"];
+    XCTAssertEqualObjects(taggedTopic.tag, @"iPhone", @"Topics need to have tags");
 }
 
 

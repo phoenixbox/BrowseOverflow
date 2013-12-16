@@ -10,11 +10,12 @@
 
 @implementation SDRTopic
 
-@synthesize name;
+@synthesize name, tag;
 
--(id)initWithString:(NSString *)newName {
+-(id)initWithString:(NSString *)newName tag:(NSString *)tagName {
     if(self = [super init]){
         name = [newName copy];
+        tag = [tagName copy];
     }
     return self;
 }

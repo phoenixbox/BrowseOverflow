@@ -11,7 +11,8 @@
 @interface SDRTopic : NSObject
 
 @property (readonly) NSString *name;
+@property (readonly) NSString *tag;
 
--(id)initWithString:(NSString *)newName;
+-(id)initWithString:(NSString *)newName tag:(NSString *)tagName;
 
 @end

@@ -28,6 +28,9 @@
 		CB9DCFA3185EC075002B2A89 /* SDRQuestionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9DCFA2185EC075002B2A89 /* SDRQuestionTests.m */; };
 		CB9DCFA6185EC0FF002B2A89 /* SDRQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9DCFA5185EC0FF002B2A89 /* SDRQuestion.m */; };
 		CB9DCFA7185EC0FF002B2A89 /* SDRQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9DCFA5185EC0FF002B2A89 /* SDRQuestion.m */; };
+		CB9DCFA9185EC87E002B2A89 /* SDRPersonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9DCFA8185EC87E002B2A89 /* SDRPersonTests.m */; };
+		CB9DCFAC185EC94E002B2A89 /* SDRPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9DCFAB185EC94E002B2A89 /* SDRPerson.m */; };
+		CB9DCFAD185EC94E002B2A89 /* SDRPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9DCFAB185EC94E002B2A89 /* SDRPerson.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,8 +69,11 @@
 		CB9DCF9B185E8995002B2A89 /* SDRTopic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDRTopic.h; sourceTree = "<group>"; };
 		CB9DCF9C185E8995002B2A89 /* SDRTopic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDRTopic.m; sourceTree = "<group>"; };
 		CB9DCFA2185EC075002B2A89 /* SDRQuestionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SDRQuestionTests.m; path = ../SDRQuestionTests.m; sourceTree = "<group>"; };
-		CB9DCFA4185EC0FF002B2A89 /* SDRQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDRQuestion.h; sourceTree = "<group>"; };
-		CB9DCFA5185EC0FF002B2A89 /* SDRQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDRQuestion.m; sourceTree = "<group>"; };
+		CB9DCFA4185EC0FF002B2A89 /* SDRQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDRQuestion.h; path = ../SDRQuestion.h; sourceTree = "<group>"; };
+		CB9DCFA5185EC0FF002B2A89 /* SDRQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SDRQuestion.m; path = ../SDRQuestion.m; sourceTree = "<group>"; };
+		CB9DCFA8185EC87E002B2A89 /* SDRPersonTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDRPersonTests.m; sourceTree = "<group>"; };
+		CB9DCFAA185EC94E002B2A89 /* SDRPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDRPerson.h; path = BrowseOverflowTests/SDRPerson.h; sourceTree = SOURCE_ROOT; };
+		CB9DCFAB185EC94E002B2A89 /* SDRPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SDRPerson.m; path = BrowseOverflowTests/SDRPerson.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +103,6 @@
 		CB9DCF4E185E848C002B2A89 = {
 			isa = PBXGroup;
 			children = (
-				CB9DCFA4185EC0FF002B2A89 /* SDRQuestion.h */,
-				CB9DCFA5185EC0FF002B2A89 /* SDRQuestion.m */,
 				CB9DCF60185E848C002B2A89 /* BrowseOverflow */,
 				CB9DCF82185E848C002B2A89 /* BrowseOverflowTests */,
 				CB9DCF59185E848C002B2A89 /* Frameworks */,
@@ -129,15 +133,11 @@
 		CB9DCF60185E848C002B2A89 /* BrowseOverflow */ = {
 			isa = PBXGroup;
 			children = (
-				CB9DCF9B185E8995002B2A89 /* SDRTopic.h */,
-				CB9DCF9C185E8995002B2A89 /* SDRTopic.m */,
+				CB9DCFAE185ECA02002B2A89 /* Models */,
 				CB9DCF69185E848C002B2A89 /* SDRAppDelegate.h */,
 				CB9DCF6A185E848C002B2A89 /* SDRAppDelegate.m */,
 				CB9DCF6C185E848C002B2A89 /* Main.storyboard */,
-				CB9DCF6F185E848C002B2A89 /* SDRMasterViewController.h */,
-				CB9DCF70185E848C002B2A89 /* SDRMasterViewController.m */,
-				CB9DCF72185E848C002B2A89 /* SDRDetailViewController.h */,
-				CB9DCF73185E848C002B2A89 /* SDRDetailViewController.m */,
+				CB9DCFAF185ECA0D002B2A89 /* Controllers */,
 				CB9DCF75185E848C002B2A89 /* Images.xcassets */,
 				CB9DCF61185E848C002B2A89 /* Supporting Files */,
 			);
@@ -162,6 +162,7 @@
 				CB9DCF99185E895C002B2A89 /* SDRTopicTests.m */,
 				CB9DCF88185E848C002B2A89 /* BrowseOverflowTests.m */,
 				CB9DCF83185E848C002B2A89 /* Supporting Files */,
+				CB9DCFA8185EC87E002B2A89 /* SDRPersonTests.m */,
 			);
 			path = BrowseOverflowTests;
 			sourceTree = "<group>";
@@ -173,6 +174,30 @@
 				CB9DCF85185E848C002B2A89 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB9DCFAE185ECA02002B2A89 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CB9DCFAA185EC94E002B2A89 /* SDRPerson.h */,
+				CB9DCFAB185EC94E002B2A89 /* SDRPerson.m */,
+				CB9DCFA4185EC0FF002B2A89 /* SDRQuestion.h */,
+				CB9DCFA5185EC0FF002B2A89 /* SDRQuestion.m */,
+				CB9DCF9B185E8995002B2A89 /* SDRTopic.h */,
+				CB9DCF9C185E8995002B2A89 /* SDRTopic.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		CB9DCFAF185ECA0D002B2A89 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CB9DCF6F185E848C002B2A89 /* SDRMasterViewController.h */,
+				CB9DCF70185E848C002B2A89 /* SDRMasterViewController.m */,
+				CB9DCF72185E848C002B2A89 /* SDRDetailViewController.h */,
+				CB9DCF73185E848C002B2A89 /* SDRDetailViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB9DCFAC185EC94E002B2A89 /* SDRPerson.m in Sources */,
 				CB9DCF6B185E848C002B2A89 /* SDRAppDelegate.m in Sources */,
 				CB9DCFA6185EC0FF002B2A89 /* SDRQuestion.m in Sources */,
 				CB9DCF71185E848C002B2A89 /* SDRMasterViewController.m in Sources */,
@@ -286,6 +312,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB9DCFAD185EC94E002B2A89 /* SDRPerson.m in Sources */,
+				CB9DCFA9185EC87E002B2A89 /* SDRPersonTests.m in Sources */,
 				CB9DCF89185E848C002B2A89 /* BrowseOverflowTests.m in Sources */,
 				CB9DCFA3185EC075002B2A89 /* SDRQuestionTests.m in Sources */,
 				CB9DCF9A185E895C002B2A89 /* SDRTopicTests.m in Sources */,

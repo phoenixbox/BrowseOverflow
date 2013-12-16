@@ -10,36 +10,38 @@
 #import "SDRTopicTests.m"
 #import "SDRTopic.h"
 
-@interface SDRTopicTests : XCTestCase
-
+@interface SDRTopicTests : XCTestCase {
+    SDRTopic *topic;
+}
 @end
 
 @implementation SDRTopicTests
 
-- (void)setUp
-{
+- (void)setUp {
     [super setUp];
     // Put setup code here; it will be run once, before the first test case.
+    topic = [[SDRTopic alloc]initWithString:@"iPhone" tag:@"iPhone"];
 }
 
-- (void)tearDown
-{
+- (void)tearDown {
     // Put teardown code here; it will be run once, after the last test case.
     [super tearDown];
+    topic = nil;
 }
 
-- (void)testThatTopicExists
-{
-    SDRTopic *newTopic = [[SDRTopic alloc]init];
-    
-    XCTAssertNotNil(newTopic, @"should be able to create a topic instance");
+- (void)testThatTopicExists {
+    XCTAssertNotNil(topic, @"should be able to create a topic instance");
 }
 
--(void)testThatATopicCanBeTagged
-{
-    SDRTopic *taggedTopic = [[SDRTopic alloc] initWithString:@"iPhone" tag: @"iPhone"];
-    XCTAssertEqualObjects(taggedTopic.tag, @"iPhone", @"Topics need to have tags");
+-(void)testThatATopicCanBeNamed {
+    XCTAssertEqual(topic.name,@"iPhone",@"should be able to name the topic");
 }
 
+-(void)testThatATopicCanBeTagged {
+    XCTAssertEqualObjects(topic.tag, @"iPhone", @"Topics need to have tags");
+}
 
+-(void)testForAListOfQuestions {
+    XCTAssertTrue([[topic recentQuestions] isKindOfClass: [NSArray class]], @"Topics should have a list of recent questions");
+}
 @end
